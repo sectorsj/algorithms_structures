@@ -47,8 +47,8 @@ public class Sort {
 
     private static Notebook createNotebook(){
         Random random = new Random();
-        BigDecimal price = BigDecimal.valueOf(random.nextInt(50) * 500 + 3000);
-        int ram = (random.nextInt(4) + 4) * 24;
+        BigDecimal price = BigDecimal.valueOf(random.nextInt(26) * 100 + 500);
+        int ram = (random.nextInt(6) + 1) * 4;
         int manufacturerCount = Notebook.Manufacturer.values().length;
         Notebook.Manufacturer manufacturer = Notebook.Manufacturer.values()[random.nextInt(manufacturerCount)];
         return new Notebook(price, ram, manufacturer);
